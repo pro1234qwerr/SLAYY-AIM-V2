@@ -8,7 +8,7 @@ import re
 import urllib.request
 
 try:
-    newest_version = "https://raw.githubusercontent.com/ai-aimbot/AIMr/main/current_version.txt"
+    newest_version = "https://raw.githubusercontent.com/pro1234qwerr/SLAYY-AIM-V2/main/current_version.txt"
     req = urllib.request.Request(newest_version, headers={'Cache-Control': 'no-cache'})
     response = urllib.request.urlopen(req)
     remote_version = response.read().decode().strip()
@@ -22,8 +22,8 @@ try:
         "./README.md",
         "./current_version.txt",
         "./lang.json",
-        "./AIMr.ico",
-        "./AIMr.py"
+        "./Icon.ico",
+        "./SLAYY AIM.py"
     ]
 
     localv_path = "localv.json"
@@ -37,7 +37,7 @@ try:
             "python": True,
             "language": "english",
             "first_launch": True,
-            "activated": False
+            "activated": True
         }
         with open(localv_path, "w") as file:
             json.dump(data, file)
@@ -88,9 +88,9 @@ try:
                 except Exception as e:
                     print(f"Error occurred while removing {file_path}: {e}")
 
-        print("Downloading AIMr...")
+        print("Downloading SLAYY AIM...")
         # Download the zip file
-        url = "https://codeload.github.com/ai-aimbot/AIMr/zip/refs/heads/main"
+        url = "https://github.com/pro1234qwerr/SLAYY-AIM-V2/archive/refs/heads/main.zip"
         response = urllib.request.urlopen(url)
         zip_content = response.read()
 
@@ -123,7 +123,7 @@ try:
         with open("localv.json", "w") as file:
             data["first_launch"] = False
             json.dump(data, file)
-        print("Please relaunch AIMr...")
+        print("Please relaunch SLAYY AIM...")
         time.sleep(5)
         exit()
 
@@ -134,7 +134,7 @@ try:
             os.system("clear")
 
     clear_terminal()
-    option = True if input("Do you want to launch AIMr or change your config? (1/2): ").lower() == "1" else False
+    option = True if input("Do you want to launch SLAYY AIM or change your config? (1/2): ").lower() == "1" else False
     if option:
         subprocess.run(["python", "library.py"])
     else:
