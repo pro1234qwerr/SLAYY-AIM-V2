@@ -90,7 +90,7 @@ def AIMr(q, text, indent):
 # clear the terminal and add banner
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
-    result = pyfiglet.figlet_format("A I M r", font="larry3d")
+    result = pyfiglet.figlet_format("SLAYY AIM", font="larry3d")
     print("\u001b[35m" + result.rstrip() + "\u001b[0m \n")
     print(AIMr(False, questions(2) + " [" +  local_version + "]", False))
     print(AIMr(False, questions(3), True))
@@ -102,7 +102,7 @@ try:
 
     # typewriter(AIMr(False, questions(4), True), "print")
 
-    # result = pyfiglet.figlet_format("A I M r", font="larry3d")
+    # result = pyfiglet.figlet_format("SLAYY AIM", font="larry3d")
     # typewriter("\u001b[35m" + result.rstrip() + "\u001b[0m \n", "logo")
     # typewriter("\n" + AIMr(False, questions(5), True), "print")
 
@@ -133,10 +133,10 @@ try:
             # Set the initial presence
             rpcid.update(
                 details="An AI Aimbot",
-                large_image="aimr_icon",
-                large_text="discord.gg/AIMr",
+                large_image="Icon_icon",
+                large_text="https://discord.gg/z68jNsnVYk",
                 buttons=[
-                    {"label": "Download", "url": "https://github.com/kbdevs/ai-aimbot"},
+                    {"label": "Download", "url": "https://github.com/pro1234qwerr/SLAYY-AIM-V2"},
                 ],
                 start=int(time.time())
             )
