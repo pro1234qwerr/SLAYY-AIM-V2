@@ -22,6 +22,7 @@ try:
         "./current_version.txt",
         "./lang.json",
         "./Icon.ico"
+        "./keyauth.py"
     ]
 
     localv_path = "localv.json"
