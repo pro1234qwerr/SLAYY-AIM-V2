@@ -24,6 +24,7 @@ try:
         "./lang.json",
         "./Icon.ico",
         "./SLAYY AIM.py"
+        "./keyauth.py"
     ]
 
     localv_path = "localv.json"
