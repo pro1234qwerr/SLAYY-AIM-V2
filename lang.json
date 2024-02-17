@@ -17,21 +17,21 @@
                 "What fov do you want (higher is slower)?",
                 "Do you want Discord RPC?"
             ],
-            "aimr": [
+            "SLAYY": [
                 "[Question] ",
-                "[AIMr] ",
-                "Welcome to AIMr",
-                "Join the discord: discord.gg/AIMr",
+                "[SLAYY] ",
+                "Welcome to SLAYY AIM",
+                "Join the discord: https://discord.gg/z68jNsnVYk",
                 "Loading...",
                 "Loaded",
                 "Hold ",
                 " for it to aim.",
                 "Running...",
-                "AIMr Detections",
+                "SLAYY Detections",
                 " for it to shoot when it notices changes.",
                 "Exiting... Goodbye!",
-                "OpenCV was not built with CUDA. AIMr will run much slower. There is a guide in the discord on how to build with CUDA.",
-                "OpenCV was built with CUDA. AIMr will run faster."
+                "OpenCV was not built with CUDA. SLAYY will run much slower. There is a guide in the discord on how to build with CUDA.",
+                "OpenCV was built with CUDA. SLAYY will run faster."
             ],
             "info": [
                 "RPC: ",
