@@ -90,7 +90,7 @@ def AIMr(q, text, indent):
 # clear the terminal and add banner
 def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
-    result = pyfiglet.figlet_format("SLAYY AIM", font="larry3d")
+    result = pyfiglet.figlet_format("SLAYY", font="larry3d")
     print("\u001b[35m" + result.rstrip() + "\u001b[0m \n")
     print(AIMr(False, questions(2) + " [" +  local_version + "]", False))
     print(AIMr(False, questions(3), True))
@@ -102,7 +102,7 @@ try:
 
     # typewriter(AIMr(False, questions(4), True), "print")
 
-    # result = pyfiglet.figlet_format("SLAYY AIM", font="larry3d")
+    # result = pyfiglet.figlet_format("SLAYY", font="larry3d")
     # typewriter("\u001b[35m" + result.rstrip() + "\u001b[0m \n", "logo")
     # typewriter("\n" + AIMr(False, questions(5), True), "print")
 
