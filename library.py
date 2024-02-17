@@ -27,7 +27,7 @@ with open("localv.json", "r") as file:
     local_version = data["version"]
 
 # Launch counter
-url = "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FAIMr&count_bg=%23FF0000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false"
+url = "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flocalhost%2FSLAYY&count_bg=%23FF0000&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Launches&edge_flat=false"
 response = requests.get(url)
 
 # randomize terminal/window title
@@ -65,7 +65,7 @@ with open("localv.json", "r") as file:
 def questions(list):
         with open("lang.json", "r", encoding='utf-8') as file:
             question = json.load(file)
-        text = question["language"][language]["aimr"]
+        text = question["language"][language]["SLAYY"]
         text = text[list]
         return text
 
@@ -77,7 +77,7 @@ def information(list):
         text = text[list]
         return text
 
-# add [AIMr] or [Question] to the text
+# add [SLAYY] or [Question] to the text
 def SLAYY(q, text, indent):
     if q:
         printable = (Fore.BLUE + questions(0) + Style.RESET_ALL + Style.DIM + text + Style.RESET_ALL)
@@ -100,7 +100,7 @@ try:
     # # loading screen
     # os.system('cls' if os.name == 'nt' else 'clear')
 
-    # typewriter(AIMr(False, questions(4), True), "print")
+    # typewriter(SLAYY(False, questions(4), True), "print")
 
     # result = pyfiglet.figlet_format("SLAYY", font="larry3d")
     # typewriter("\u001b[35m" + result.rstrip() + "\u001b[0m \n", "logo")
@@ -257,21 +257,21 @@ try:
             time.sleep(0.2)  # Delay for 0.2 seconds
 
         # running text
-        print(AIMr(False, information(0) + str(rpc), False))
-        print(AIMr(False, information(1) + str(show_frame), False))
+        print(SLAYY(False, information(0) + str(rpc), False))
+        print(SLAYY(False, information(1) + str(show_frame), False))
         if show_frame:
-            print(AIMr(False, information(2)  + str(floating), False))
+            print(SLAYY(False, information(2)  + str(floating), False))
         if shoot:
-            print(AIMr(False, information(3) + str(shoot), False))
-            print(AIMr(False, information(4) + str(key), False))
-        print(AIMr(False, information(5)  + str(placement_side), False))
-        print(AIMr(False, information(6) + str(smoothness), False))
-        print(AIMr(False, information(7)  + str(fovnum), False))
+            print(SLAYY(False, information(3) + str(shoot), False))
+            print(SLAYY(False, information(4) + str(key), False))
+        print(SLAYY(False, information(5)  + str(placement_side), False))
+        print(SLAYY(False, information(6) + str(smoothness), False))
+        print(SLAYY(False, information(7)  + str(fovnum), False))
         if cv2.cuda.getCudaEnabledDeviceCount() > 0:
-            print(AIMr(False, "CUDA: " + Style.RESET_ALL + Fore.GREEN + information(8) + Style.RESET_ALL, False))
+            print(SLAYY(False, "CUDA: " + Style.RESET_ALL + Fore.GREEN + information(8) + Style.RESET_ALL, False))
         else:
-            print(AIMr(False, "CUDA: " + Style.RESET_ALL + Fore.RED + information(9) + Style.RESET_ALL, False))
-        typewriter(AIMr(False, Style.RESET_ALL + "\u001b[32m" + questions(8) + "\u001b[0m", True), "print")
+            print(SLAYY(False, "CUDA: " + Style.RESET_ALL + Fore.RED + information(9) + Style.RESET_ALL, False))
+        typewriter(SLAYY(False, Style.RESET_ALL + "\u001b[32m" + questions(8) + "\u001b[0m", True), "print")
         
         # Get image of screen
         screen_size = win32api.GetSystemMetrics(0), win32api.GetSystemMetrics(1)
@@ -415,11 +415,11 @@ try:
         key = config_data["trigkey"]
         delay = int(config_data["trigdelay"])
         # running text
-        print(AIMr(False, information(0) + str(rpc), False))
-        print(AIMr(False, information(10) + str(key), False))
-        print(AIMr(False, information(11) + str(delay), False))
-        typewriter(AIMr(False, questions(6) + key + questions(10), True), "print")
-        typewriter(AIMr(False, "\u001b[32m" + questions(8) + "\u001b[0m", False), "print")
+        print(SLAYY(False, information(0) + str(rpc), False))
+        print(SLAYY(False, information(10) + str(key), False))
+        print(SLAYY(False, information(11) + str(delay), False))
+        typewriter(SLAYY(False, questions(6) + key + questions(10), True), "print")
+        typewriter(SLAYY(False, "\u001b[32m" + questions(8) + "\u001b[0m", False), "print")
 
         while True:
             # triggerbot loop
@@ -442,5 +442,5 @@ except KeyboardInterrupt:
     # to exit
     clearfig()
     camera.release()
-    typewriter(AIMr(False, "\u001b[0m\033[91m" + questions(11) + "\n\u001b[0m", False), "print")
+    typewriter(SLAYY(False, "\u001b[0m\033[91m" + questions(11) + "\n\u001b[0m", False), "print")
     time.sleep(0.2)
