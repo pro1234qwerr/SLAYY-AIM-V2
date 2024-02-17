@@ -78,7 +78,7 @@ def information(list):
         return text
 
 # add [AIMr] or [Question] to the text
-def AIMr(q, text, indent):
+def SLAYY(q, text, indent):
     if q:
         printable = (Fore.BLUE + questions(0) + Style.RESET_ALL + Style.DIM + text + Style.RESET_ALL)
     else:
@@ -92,8 +92,8 @@ def clearfig():
     os.system('cls' if os.name == 'nt' else 'clear')
     result = pyfiglet.figlet_format("SLAYY", font="larry3d")
     print("\u001b[35m" + result.rstrip() + "\u001b[0m \n")
-    print(AIMr(False, questions(2) + " [" +  local_version + "]", False))
-    print(AIMr(False, questions(3), True))
+    print(SLAYY(False, questions(2) + " [" +  local_version + "]", False))
+    print(SLAYY(False, questions(3), True))
 
 # main loop
 try:
@@ -104,7 +104,7 @@ try:
 
     # result = pyfiglet.figlet_format("SLAYY", font="larry3d")
     # typewriter("\u001b[35m" + result.rstrip() + "\u001b[0m \n", "logo")
-    # typewriter("\n" + AIMr(False, questions(5), True), "print")
+    # typewriter("\n" + SLAYY(False, questions(5), True), "print")
 
     # time.sleep(1)
 
